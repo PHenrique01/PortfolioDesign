@@ -3,7 +3,7 @@
 
 
 @theme {
-  --font-family: "Inter", "sans-serif";
+  --font-inter: "Inter", "sans-serif";
   
   --color-grey-50: #E8E8E8;
   --color-grey-100: #B9B9B9;
@@ -15,4 +15,9 @@
   --color-grey-700: #141414;
   --color-grey-800: #0F0F0F;
   --color-grey-900: #0C0C0C;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-grey-700);
 }
