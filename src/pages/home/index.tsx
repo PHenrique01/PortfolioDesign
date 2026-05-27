@@ -86,9 +86,9 @@ export default function Home() {
                         <div className='flex flex-col gap-12'>
                             <Title title='design em prática' subtitle='Design aplicado em projetos reais'/>
                             <div className='flex gap-6'>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={LayoutIcon} title='Interface do Usuário' description='Criação de interfaces modernas, organizadas e funcionais, com foco em estética e usabilidade para experiências digitais claras e consistentes.'/>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={BrainIcon} title='Experiência do Usuário' description='Desenvolvimento de soluções centradas no usuário com foco em navegação intuitiva, clareza visual e interações simples e eficientes.'/>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={NetworkIcon} title='Prototipação de Interfaces' description='Planejamento de fluxos, wireframes e protótipos navegáveis para transformar ideias em experiências digitais claras e consistentes.'/>
+                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={LayoutIcon} title='Interface do Usuário' description='Criação de interfaces modernas, organizadas e funcionais, com foco em estética e usabilidade para experiências digitais claras e consistentes.'/>
+                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={BrainIcon} title='Experiência do Usuário' description='Desenvolvimento de soluções centradas no usuário com foco em navegação intuitiva, clareza visual e interações simples e eficientes.'/>
+                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={NetworkIcon} title='Prototipação de Interfaces' description='Planejamento de fluxos, wireframes e protótipos navegáveis para transformar ideias em experiências digitais claras e consistentes.'/>
                             </div>
                         </div>
                     </Layout>

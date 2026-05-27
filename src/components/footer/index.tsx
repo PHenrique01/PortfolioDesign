@@ -5,7 +5,7 @@ import Layout from '@components/layout'
 
 export default function Footer() {
     return(
-        <footer className='border border-t-grey-500 py-10'>
+        <footer className='border-t border-t-grey-500 py-10'>
             <Layout>
                 <div className='flex items-center justify-between'>
                     <div>
