@@ -17,7 +17,7 @@ export default function Card({  icon, image, title, subtitle, description, nameC
             {icon && (
                 <img src={icon} alt="" className='w-6 h-6'/>
             )}
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-2'>
                 <h3 className='text-white text-2xl font-medium'>{title}</h3>
                 {subtitle && (
                     <p className='text-grey-400'>{subtitle}</p>

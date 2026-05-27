@@ -11,6 +11,12 @@ import Card from '@components/card'
 import ProjectCard from '@components/projectCard'
 import StateItem from '@components/statesItem'
 import Title from '@components/title'
+import CategoryButton from '@components/categoryButton'
+import Input from '@components/input'
+import { useState } from 'react'
+import Footer from '@components/footer'
+import SocialLink from '@components/socialLink'
+
 
 export default function Home() {
     const stats = [
@@ -31,6 +37,8 @@ export default function Home() {
             label: "Horas de aprendizado",
         },
     ]
+
+    const [selected, setSelected] = useState("Geral");
 
     return(
         <>
@@ -87,21 +95,38 @@ export default function Home() {
                 </section>
                 <section aria-label='seção contato' className='py-28'>
                     <Layout>
-                        <div>
+                        <div className='grid grid-cols-2 items-start gap-12'>
                             <div className='flex flex-col gap-8'>
-                                <Title title='vamos trabalhar juntos' subtitle='Fique à vontade para entrar em contato para dúvidas, oportunidades ou ideais. Estou sempre aberto a novas conversas e colaboração em design.' variant='lg'/>
+                                <Title title='vamos trabalhar juntos' subtitle='Fique à vontade para entrar em contato para dúvidas, oportunidades ou ideais. Estou sempre aberto a novas conversas e colaboração em design.' nameClasse='max-w-[414px]' variant='lg'/>
                                 <div>
-                                    <ul className="flex list-disc marker:text-white pl-4 gap-8">
-                                        <li><a href="#" className='text-white text-lg'>LinkedIn</a></li>
-                                        <li><a href="#" className='text-white text-lg'>Behance</a></li>
-                                        <li><a href="#" className='text-white text-lg'>Github</a></li>
+                                    <ul className="flex pl-4 gap-8">
+                                        <SocialLink title='LinkedIn' href='https://www.linkedin.com/in/paulo-henrique2003'/>
+                                        <SocialLink title='Behance' href='https://www.behance.net/paulohenrique239'/>
+                                        <SocialLink title='Github' href='https://github.com/PHenrique01'/>
                                     </ul>
+                                </div>
+                            </div>
+                            <div className='flex flex-col gap-10'>
+                                <div className='flex flex-wrap gap-4'>
+                                    <CategoryButton label='Geral' active={selected === "Geral"} onClick={() => setSelected("Geral")}/>
+                                    <CategoryButton label='Projeto' active={selected === "Projeto"} onClick={() => setSelected("Projeto")}/>
+                                    <CategoryButton label='Parceria' active={selected === "Parceria"} onClick={() => setSelected("Parceria")}/>
+                                    <CategoryButton label='Outro' active={selected === "Outro"} onClick={() => setSelected("Outro")}/>
+                                </div>
+                                <div>
+                                    <form action="" className='flex flex-col gap-8'>
+                                        <Input label='Nome' placeholder='Seu nome'/>
+                                        <Input label='Email' placeholder='Seu email'/>
+                                        <Input label='Mensagem' placeholder='Como posso ajudar?'/>
+                                        <button type='submit' className='text-white font-medium py-4 rounded-full border border-white/20 transition-all duration-300 hover:bg-white hover:text-grey-700 cursor-pointer'>Enviar mensagem</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </Layout>
                 </section>
             </main>
+            <Footer/>
         </>
     )
 }
