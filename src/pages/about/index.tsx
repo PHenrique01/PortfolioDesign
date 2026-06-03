@@ -12,9 +12,9 @@ export default function About() {
         <>
             <Header/>
             <main className='mt-52'>
-                <section aria-label='seção sobre' className='mb-28'>
+                <section aria-label='Sobre' className='mb-24'>
                     <Layout>
-                        <div className='grid grid-cols-2 gap-12'>
+                        <div className='grid grid-cols-2 items-center gap-12'>
                             <div className='flex flex-col gap-4'>
                                 <Title title='minha trajetória no design' subtitle='Aprendendo, criando e evoluindo através de experiência digitais.'/>
                                 <div className='flex flex-col gap-2'>
@@ -35,7 +35,7 @@ export default function About() {
                         </div>
                     </Layout>
                 </section>
-                <section aria-label='seção experiência profissional' className='py-28'>
+                <section aria-label='Experiência profissional' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
                             <Title title='experiência profissional' subtitle='Entre código, interfaces e experiência do usuário.'/>
@@ -48,7 +48,7 @@ export default function About() {
                         </div>
                     </Layout>
                 </section>
-                <section aria-label='seção minha formação' className='py-28'>
+                <section aria-label='Minha formação' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
                             <Title title='minha formação' subtitle='Caminho de estudos e aprendizado.'/>

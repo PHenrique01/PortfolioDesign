@@ -17,34 +17,37 @@ import { useState } from 'react'
 import Footer from '@components/footer'
 import SocialLink from '@components/socialLink'
 
-
 export default function Home() {
+    const [selected, setSelected] = useState('Geral')
+
     const stats = [
         {
-            number: "1+",
-            label: "Anos de experiência",
+            number: 1,
+            suffix: '+',
+            label: 'Anos de experiência',
         },
         {
-            number: "10+",
-            label: "Projetos UI/UX",
+            number: 10,
+            suffix: '+',
+            label: 'Projetos UI/UX',
         },
         {
-            number: "5+",
-            label: "Projetos publicados",
+            number: 5,
+            suffix: '+',
+            label: 'Projetos publicados',
         },
         {
-            number: "100+",
-            label: "Horas de aprendizado",
+            number: 100,
+            suffix: '+',
+            label: 'Horas de aprendizado',
         },
     ]
-
-    const [selected, setSelected] = useState("Geral");
 
     return(
         <>
             <Header/>
-            <main className='mt-52'>
-                <section aria-label='seção hero' className='mb-64'>
+            <main>
+                <section aria-label='Hero' className='min-h-screen flex items-center justify-center'>
                     <img src={HeroImg} alt="" className='absolute inset-0 w-full h-full object-cover -z-10'/>
                     <Layout>
                         <div className='select-none'>
@@ -60,28 +63,28 @@ export default function Home() {
                         </div>
                     </Layout>
                 </section>
-                <section aria-label='seção stats' className='my-20'>
+                <section aria-label='Stats' className='py-20'>
                     <Layout>
                         <div className='flex justify-between'>
-                            {stats.map((stat) => (
-                                <StateItem key={stat.label} number={stat.number} label={stat.label}/>
+                            {stats.map((item) => (
+                                <StateItem key={item.label} number={item.number} suffix={item.suffix} label={item.label}/>
                             ))}
                         </div>
                     </Layout>
                 </section>
-                <section aria-label='seção projetos em destaque' className='py-28'>
+                <section aria-label='Projetos em destaque' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
                             <Title title='projetos em destaque' subtitle='Alguns dos principais trabalhos desenvolvidos.'/>
                             <div className='flex flex-col gap-6'>
-                                <ProjectCard image={JackTheJumperImg} title='Jack The Jumper' href='#'/>
-                                <ProjectCard image={ImersivaMedImg} title='ImersivaMed' href='#'/>
-                                <ProjectCard image={RotaOncoImg} title='RotaOnco' href='#'/>
+                                <ProjectCard image={JackTheJumperImg} title='Jack The Jumper' href='https://www.behance.net/gallery/237397827/Landing-page-Jack-The-Jumper-UIUX'/>
+                                <ProjectCard image={ImersivaMedImg} title='ImersivaMed' href='https://www.behance.net/gallery/247477215/Mobile-ImersivaMed-UIUX'/>
+                                <ProjectCard image={RotaOncoImg} title='RotaOnco' href='https://www.behance.net/gallery/248212809/Mobile-RotaOnco-UIUX'/>
                             </div>
                         </div>
                     </Layout>
                 </section>
-                <section aria-label='seção design em prática' className='py-28'>
+                <section aria-label='Design em prática' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
                             <Title title='design em prática' subtitle='Design aplicado em projetos reais'/>
@@ -93,7 +96,7 @@ export default function Home() {
                         </div>
                     </Layout>
                 </section>
-                <section aria-label='seção contato' className='py-28'>
+                <section aria-label='Contato' className='py-24'>
                     <Layout>
                         <div className='grid grid-cols-2 items-start gap-12'>
                             <div className='flex flex-col gap-8'>

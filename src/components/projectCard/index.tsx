@@ -7,7 +7,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ image, title, href }: ProjectCardProps) {
     return(
         <div>
-            <a href={href} className='flex flex-col gap-4'>
+            <a href={href} target='_blank' rel='noopener noreferrer' className='flex flex-col gap-4'>
                 <div className='group overflow-hidden rounded-2xl'>
                     <img src={image} alt='Imagem do projeto' className='w-full transition-transform duration-700 ease-out group-hover:scale-105'/>
                 </div>
