@@ -1,0 +1,122 @@
+{
+    "header": {
+        "about": "sobre",
+        "certifications": "certificações",
+        "projects": "projetos"
+    },
+
+    "hero": {
+        "designer": "ui/ux designer",
+        "prototipo": "protótipo",
+        "designSystem": "design system",
+        "figma": "figma"
+    },
+
+    "stats": {
+        "experience": "Anos de experiência",
+        "projects": "Projetos UI/UX",
+        "published": "Projetos publicados",
+        "hours": "Horas de aprendizado"
+    },
+
+    "project": {
+        "title": "projetos em destaque",
+        "subTitle": "Alguns dos principais trabalhos desenvolvidos.",
+        "projectOne": "Jack The Jumper",
+        "projectTwo": "ImersivaMed",
+        "projectThree": "RotaOnco"
+    },
+
+    "design": {
+        "title": "design em prática",
+        "subTitle": "Design aplicado em projetos reais",
+        "interfaceTitle": "Interface do Usuário",
+        "interfaceDesc": "Criação de interfaces modernas, organizadas e funcionais, com foco em estética e usabilidade para experiências digitais claras e consistentes.",
+        "experienceTitle": "Experiência do Usuário",
+        "experienceDesc": "Desenvolvimento de soluções centradas no usuário com foco em navegação intuitiva, clareza visual e interações simples e eficientes.",
+        "prototypeTitle": "Prototipação de Interfaces",
+        "prototypeDesc": "Planejamento de fluxos, wireframes e protótipos navegáveis para transformar ideias em experiências digitais claras e consistentes."
+    },
+
+    "contact": {
+        "title": "vamos trabalhar juntos",
+        "subTitle": "Fique à vontade para entrar em contato para dúvidas, oportunidades ou ideias. Estou sempre aberto a novas conversas e colaborações em design.",
+        "categoryOne": "Geral",
+        "categoryTwo": "Projeto",
+        "categoryThree": "Parceria",
+        "categoryFour": "Outro",
+        "labelOne": "nome",
+        "placeholderOne": "Seu nome",
+        "labelTwo": "email",
+        "placeholderTwo": "Seu email",
+        "labelThree": "mensagem",
+        "placeholderThree": "Como posso ajudar?",
+        "button": "Enviar mensagem"
+    },
+
+    "about": {
+        "title": "minha trajetória no design",
+        "subTitle": "Aprendendo, criando e evoluindo através de experiência",
+        "descriptionOne": "Meu interesse por UI/UX começou ainda no ensino médio técnico, durante uma disciplina voltada ao design. Apensar de não ser um conteúdo aprofundado, foi nesse momento que tive o primeiro contato com o universo do design e passei a criar pequenas interfaces.",
+        "descriptionTwo": "Ao ingressar na faculdade, compreendi a importância de planejar bem os projetos antes do desenvolvimento. Em algumas disciplinas, comecei a criar protótipos para estruturar melhor as ideias antes de transformá-las em produtos funcionais, o que fortaleceu ainda mais meu interesse por UI/UX.",
+        "descriptionThree": "Desde então, venho me dedicando a cursos na área de UI/UX Design com o objetivo de aprimorar minhas habilidades e conhecimentos. Atualmente, continuo em constante aprendizado e evolução."
+    },
+
+    "experience": {
+        "title": "experiência profissional",
+        "subTitle": "Entre código, interfaces e experiência do usuário.",
+        "rotaOncoTitle": "RotaOnco | agost de 2025 - out de 2025 (Freelancer)",
+        "rotaOncoSubTitle": "Responsável pelo Design UI/UX",
+        "rotaOncoListOne": "Pesquisa de referência visuais e funcionais.",
+        "rotaOncoListTwo": "Criação de wireframes para definição perfis de usuários (médicos, paciente e adm do gerenciador).",
+        "rotaOncoListThree": "Protótipos de alta fidelidade para app e gerenciador, garantindo experiência intuitiva.",
+
+        "equipeWTTitle": "EquipeWT | jul de 2025 - agost de 2025 (Freelancer)",
+        "equipeWTSubTitle": "Responsável pelo Design UI/UX",
+        "equipeWTListOne": "Pesquisa de referência visuais e funcionais.",
+        "equipeWTListTwo": "Criação de wireframes para definição da estrutura do site.",
+        "equipeWTListThree": "Desenvolvimento do layout e protótipos de alta fidelidade.",
+        
+        "designTitle": "Sistema Fiea | out de 2024 - jun de 2025 (Estágio)",
+        "designSubTitle": "Estágio em Design UI/UX",
+        "designListOne": "Atuação em parceria com outro designer no desenvolvimento de interfaces para sistemas internos.",
+        "designListTwo": "Criação de wireframes e protótipos de alta fidelidade no Figma.",
+        "designListThree": "Participação em todo o processo de design, do planejamento à prototipação.",
+        "designListFour": "Aprofundamento em UX e UI Design, com foco na experiência do usuário e na construção visual das interfaces.",
+
+        "devTitle": "Sistema Fiea | jul de 2024 - set de 2024 (Estágio)",
+        "devSubTitle": "Estágio em Desenvolvimento Front",
+        "devListOne": "Colaboração com a equipe no desenvolvimento do front-end de um sistema interno.",
+        "devListTwo": "Participação em prática de desenvolvimento ágil, como sprints, dailies e retrospectivas.",
+        "devListThree": "Aprimoramento dos conhecimentos técnicos em front-end durante o estágio.",
+        "devListFour": "Experiência prática em trabalho em equipe e aplicação de metodologias ágeis."
+    },
+
+    "training": {
+        "title": "minha formação",
+        "subTitle": "Caminho de estudos e aprendizado.",
+        "graduationTitle": "Centro Universitário - CESMAC",
+        "graduationSubTitle": "Sistemas de Informação | 2021.2 - 2025.1",
+        "technicalTitle": "Centro de Educação e Tecnologia Sesi Senai",
+        "technicalSubTitle": "Ensino Médio Técnico em Informatica para Internet | 2019 - 2021"
+
+    },
+
+    "certification": {
+        "title": "minhas certificações",
+        "subTitle": "Algumas das minhas conquistas.",
+        "categoryOne": "Todos",
+        "categoryTwo": "UI/UX Design",
+        "categoryThree": "Front-End",
+        "categoryFour": "Imersão"
+    },
+
+    "projects": {
+        "title": "experiências criadas",
+        "subTitle": "Ideias transformadas em experiências digitais.",
+        "categoryOne": "Todos",
+        "categoryTwo": "Freelance",
+        "categoryThree": "Acadêmicos",
+        "categoryFour": "Cursos"
+    }
+}

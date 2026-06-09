@@ -5,15 +5,17 @@ import { useState } from 'react'
 import { certifications } from '@data/certifications.data'
 import CategoryButton from '@components/categoryButton'
 import Footer from '@components/footer'
+import { useTranslation } from 'react-i18next'
 
 export default function Certifications() {
     const [selected, setSelected] = useState('Todos')
+    const { t } = useTranslation()
 
     const categories = [
-        'Todos',
-        'UI/UX Design',
-        'Front-End',
-        'Imersão',
+        t("certification.categoryOne"),
+        t("certification.categoryTwo"),
+        t("certification.categoryThree"),
+        t("certification.categoryFour"),
     ]
 
     const filteredCertifications = selected === 'Todos' ? certifications : certifications.filter(
@@ -27,7 +29,7 @@ export default function Certifications() {
                 <section aria-label='Certificações' className='pb-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
-                            <Title title='minhas certificações' subtitle='Algumas das minhas conquistas.'/>
+                            <Title title={t("certification.title")} subtitle={t("certification.subTitle")}/>
                             <div className='flex flex-col gap-8'>
                                 <div className='flex gap-4'>
                                     {categories.map((category) => (

@@ -3,9 +3,11 @@ import Layout from '@components/layout'
 import LanguageSelector from '@components/translator'
 import { NavLink, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false)
+    const { t } = useTranslation()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,9 +32,9 @@ export default function Header() {
                     </div>
                     <nav>
                         <ul className='flex items-center gap-6'>
-                            <li><NavLink to="/sobre" className={({ isActive }) => `uppercase transition-all duration-300 ${ isActive ? "text-white" : "text-grey-100 hover:text-white"}`}>sobre</NavLink></li>
-                            <li><NavLink to="/certificacoes" className={({ isActive }) => `uppercase transition-all duration-300 ${ isActive ? "text-white" : "text-grey-100 hover:text-white"}`}>certificações</NavLink></li>
-                            <li><NavLink to="/projetos" className={({ isActive }) => `uppercase transition-all duration-300 ${ isActive ? "text-white" : "text-grey-100 hover:text-white"}`}>projetos</NavLink></li>
+                            <li><NavLink to="/sobre" className={({ isActive }) => `uppercase transition-all duration-300 ${ isActive ? "text-white" : "text-grey-100 hover:text-white"}`}>{t("header.about")}</NavLink></li>
+                            <li><NavLink to="/certificacoes" className={({ isActive }) => `uppercase transition-all duration-300 ${ isActive ? "text-white" : "text-grey-100 hover:text-white"}`}>{t("header.certifications")}</NavLink></li>
+                            <li><NavLink to="/projetos" className={({ isActive }) => `uppercase transition-all duration-300 ${ isActive ? "text-white" : "text-grey-100 hover:text-white"}`}>{t("header.projects")}</NavLink></li>
                         </ul>
                     </nav>
                     <div>

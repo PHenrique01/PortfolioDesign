@@ -6,8 +6,11 @@ import Card from '@components/card'
 import LogoOne from '@assets/logo/logo-1.svg'
 import LogoTwo from '@assets/logo/logo-2.svg'
 import Footer from '@components/footer'
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+    const { t } = useTranslation()
+
     return(
         <>
             <Header/>
@@ -16,17 +19,11 @@ export default function About() {
                     <Layout>
                         <div className='grid grid-cols-2 items-center gap-12'>
                             <div className='flex flex-col gap-4'>
-                                <Title title='minha trajetória no design' subtitle='Aprendendo, criando e evoluindo através de experiência digitais.'/>
+                                <Title title={t("about.title")} subtitle={t("about.subTitle")}/>
                                 <div className='flex flex-col gap-2'>
-                                    <p className='text-grey-100'>
-                                        Meu interesse por UI/UX começou ainda no ensino médio técnico, durante uma disciplina voltada ao design. Apensar de não ser um conteúdo aprofundado, foi nesse momento que tive o primeiro contato com o universo do design e passei a criar pequenas interfaces.
-                                    </p>
-                                    <p className='text-grey-100'>
-                                        Ao ingressar na faculdade, compreendi a importância de planejar bem os projetos antes do desenvolvimento. Em algumas disciplinas, comecei a criar protótipos para estruturar melhor as ideias antes de transformá-las em produtos funcionais, o que fortaleceu ainda mais meu interesse por UI/UX.
-                                    </p>
-                                    <p className='text-grey-100'>
-                                        Desde então, venho me dedicando a cursos na área de UI/UX Design com o objetivo de aprimorar minhas habilidades e conhecimentos. Atualmente, continuo em constante aprendizado e evolução.
-                                    </p>
+                                    <p className='text-grey-100'>{t("about.descriptionOne")}</p>
+                                    <p className='text-grey-100'>{t("about.descriptionTwo")}</p>
+                                    <p className='text-grey-100'>{t("about.descriptionThree")}</p>
                                 </div>
                             </div>
                             <div className='flex justify-end'>
@@ -38,12 +35,12 @@ export default function About() {
                 <section aria-label='Experiência profissional' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
-                            <Title title='experiência profissional' subtitle='Entre código, interfaces e experiência do usuário.'/>
+                            <Title title={t("experience.title")} subtitle={t("experience.subTitle")}/>
                             <div className='flex flex-col gap-6'>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title='RotaOnco | agost de 2025 - out de 2025 (Freelancer)' subtitle='Responsável pelo Design UI/UX' list={["Pesquisa de referência visuais e funcionais", "Criação de wireframes para definição perfis de usuários (médicos, paciente e adm do gerenciador).", "Protótipos de alta fidelidade para app e gerenciador, garantindo experiência intuitiva."]}/>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title='EquipeWT | jul de 2025 - agost de 2025 (Freelancer)' subtitle='Responsável pelo Design UI/UX' list={["Pesquisa de referência visuais e funcionais.", "Criação de wireframes para definição da estrutura do site.", "Desenvolvimento do layout e protótipos de alta fidelidade."]}/>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title='Sistema Fiea | out de 2024 - jun de 2025 (Estágio)' subtitle='Estágio em Design UI/UX' list={["Atuação em parceria com outro designer no desenvolvimento de interfaces para sistemas internos.", "Criação de wireframes e protótipos de alta fidelidade no Figma.", "Participação em todo o processo de design, do planejamento à prototipação.", "Aprofundamento em UX e UI Design, com foco na experiência do usuário e na construção visual das interfaces."]}/>
-                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title='Sistema Fiea | jul de 2024 - set de 2024 (Estágio)' subtitle='Estágio em Desenvolvimento Front' list={["Colaboração com a equipe no desenvolvimento do front-end de um sistema interno.", "Participação em prática de desenvolvimento ágil, como sprints, dailies e retrospectivas.", "Aprimoramento dos conhecimentos técnicos em front-end durante o estágio.", "Experiência prática em trabalho em equipe e aplicação de metodologias ágeis."]}/>
+                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.rotaOncoTitle")} subtitle={t("experience.rotaOncoSubTitle")} list={[t("experience.rotaOncoListOne"), t("experience.rotaOncoListTwo"), t("experience.rotaOncoListThree")]}/>
+                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.equipeWTTitle")} subtitle={t("experience.equipeWTSubTitle")} list={[t("experience.equipeWTListOne"), t("experience.equipeWTListTwo"), t("experience.equipeWTListThree")]}/>
+                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.designTitle")} subtitle={t("experience.designSubtitle")} list={[t("experience.designListOne"), t("experience.designListTwo"), t("experience.designListThree"), t("experience.designListFour")]}/>
+                                <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.devTitle")} subtitle={t("experience.devSubTitle")} list={[t("experience.devListOne"), t("experience.devListTwo"), t("experience.devListThree"), t("experience.devListFour")]}/>
                             </div>
                         </div>
                     </Layout>
@@ -51,10 +48,10 @@ export default function About() {
                 <section aria-label='Minha formação' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
-                            <Title title='minha formação' subtitle='Caminho de estudos e aprendizado.'/>
+                            <Title title={t("training.title")} subtitle={t("training.subTitle")}/>
                             <div className='flex flex-col gap-6'>
-                                <Card nameClasse='items-center' image={LogoOne} title='Centro Universitário - CESMAC' subtitle='Sistemas de Informação | 2021.2 - 2025.1' variant='row'/>
-                                <Card nameClasse='items-center' image={LogoTwo} title='Centro de Educação e Tecnologia Sesi Senai' subtitle='Ensino Médio Técnico em Informatica para Internet | 2019 - 2021' variant='row'/>
+                                <Card nameClasse='items-center' image={LogoOne} title={t("training.graduationTitle")} subtitle={t("training.graduationSubTitle")} variant='row'/>
+                                <Card nameClasse='items-center' image={LogoTwo} title={t("training.technicalTitle")} subtitle={t("training.technicalSubTitle")} variant='row'/>
                             </div>
                         </div>
                     </Layout>

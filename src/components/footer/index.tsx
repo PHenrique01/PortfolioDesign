@@ -9,7 +9,7 @@ export default function Footer() {
             <Layout>
                 <div className='flex items-center justify-between'>
                     <div>
-                        <p className='text-grey-400'>© 2026 Paulo Henrique. Todos os direitos reservados.</p>
+                        <p className='text-grey-400'>© 2026 Paulo Henrique.</p>
                     </div>
                     <div className='flex items-center gap-8'>
                         <a href="https://www.linkedin.com/in/paulo-henrique2003" target='_blank'><img src={LinkedInIcon} alt="" className='w-5 h-5 transition-all duration-300 hover:opacity-50'/></a>

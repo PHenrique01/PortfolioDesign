@@ -16,30 +16,32 @@ import Input from '@components/input'
 import { useState } from 'react'
 import Footer from '@components/footer'
 import SocialLink from '@components/socialLink'
+import { useTranslation } from 'react-i18next'
 
 export default function Home() {
     const [selected, setSelected] = useState('Geral')
+    const { t } = useTranslation()
 
     const stats = [
         {
             number: 1,
             suffix: '+',
-            label: 'Anos de experiência',
+            label: t("stats.experience"),
         },
         {
             number: 10,
             suffix: '+',
-            label: 'Projetos UI/UX',
+            label: t("stats.projects"),
         },
         {
             number: 5,
             suffix: '+',
-            label: 'Projetos publicados',
+            label: t("stats.published"),
         },
         {
             number: 100,
             suffix: '+',
-            label: 'Horas de aprendizado',
+            label: t("stats.hours"),
         },
     ]
 
@@ -54,10 +56,10 @@ export default function Home() {
                             <div className='flex flex-col items-center gap-2'>
                                 <h1 className="text-white text-8xl">Paulo Henrique</h1>
                                 <ul className="flex items-center gap-4">
-                                    <li className="text-grey-400 text-lg uppercase">ui/ux designer</li>
-                                    <li className="text-grey-400 text-lg uppercase">protótipo</li>
-                                    <li className="text-grey-400 text-lg uppercase">design system</li>
-                                    <li className="text-grey-400 text-lg uppercase">figma</li>
+                                    <li className="text-grey-400 text-lg uppercase">{t("hero.designer")}</li>
+                                    <li className="text-grey-400 text-lg uppercase">{t("hero.prototipo")}</li>
+                                    <li className="text-grey-400 text-lg uppercase">{t("hero.designSystem")}</li>
+                                    <li className="text-grey-400 text-lg uppercase">{t("hero.figma")}</li>
                                 </ul>
                             </div>
                         </div>
@@ -75,11 +77,11 @@ export default function Home() {
                 <section aria-label='Projetos em destaque' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
-                            <Title title='projetos em destaque' subtitle='Alguns dos principais trabalhos desenvolvidos.'/>
+                            <Title title={t("project.title")} subtitle={t("project.subTitle")}/>
                             <div className='flex flex-col gap-6'>
-                                <ProjectCard image={JackTheJumperImg} title='Jack The Jumper' href='https://www.behance.net/gallery/237397827/Landing-page-Jack-The-Jumper-UIUX'/>
-                                <ProjectCard image={ImersivaMedImg} title='ImersivaMed' href='https://www.behance.net/gallery/247477215/Mobile-ImersivaMed-UIUX'/>
-                                <ProjectCard image={RotaOncoImg} title='RotaOnco' href='https://www.behance.net/gallery/248212809/Mobile-RotaOnco-UIUX'/>
+                                <ProjectCard image={JackTheJumperImg} title={t("project.projectOne")} href='https://www.behance.net/gallery/237397827/Landing-page-Jack-The-Jumper-UIUX'/>
+                                <ProjectCard image={ImersivaMedImg} title={t("project.projectTwo")} href='https://www.behance.net/gallery/247477215/Mobile-ImersivaMed-UIUX'/>
+                                <ProjectCard image={RotaOncoImg} title={t("project.projectThree")} href='https://www.behance.net/gallery/248212809/Mobile-RotaOnco-UIUX'/>
                             </div>
                         </div>
                     </Layout>
@@ -87,11 +89,11 @@ export default function Home() {
                 <section aria-label='Design em prática' className='py-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
-                            <Title title='design em prática' subtitle='Design aplicado em projetos reais'/>
-                            <div className='flex gap-6'>
-                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={LayoutIcon} title='Interface do Usuário' description='Criação de interfaces modernas, organizadas e funcionais, com foco em estética e usabilidade para experiências digitais claras e consistentes.'/>
-                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={BrainIcon} title='Experiência do Usuário' description='Desenvolvimento de soluções centradas no usuário com foco em navegação intuitiva, clareza visual e interações simples e eficientes.'/>
-                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={NetworkIcon} title='Prototipação de Interfaces' description='Planejamento de fluxos, wireframes e protótipos navegáveis para transformar ideias em experiências digitais claras e consistentes.'/>
+                            <Title title={t("design.title")} subtitle={t("design.subTitle")}/>
+                            <div className='grid grid-cols-3 gap-6'>
+                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={LayoutIcon} title={t("design.interfaceTitle")} description={t("design.interfaceDesc")}/>
+                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={BrainIcon} title={t("design.experienceTitle")} description={t("design.experienceDesc")}/>
+                                <Card animated nameClasse='bg-grey-500 p-6 rounded-2xl' variant='column' icon={NetworkIcon} title={t("design.prototypeTitle")} description={t("design.prototypeDesc")}/>
                             </div>
                         </div>
                     </Layout>
@@ -100,7 +102,7 @@ export default function Home() {
                     <Layout>
                         <div className='grid grid-cols-2 items-start gap-12'>
                             <div className='flex flex-col gap-8'>
-                                <Title title='vamos trabalhar juntos' subtitle='Fique à vontade para entrar em contato para dúvidas, oportunidades ou ideais. Estou sempre aberto a novas conversas e colaboração em design.' nameClasse='max-w-[414px]' variant='lg'/>
+                                <Title title={t("contact.title")} subtitle={t("contact.subTitle")} nameClasse='max-w-[414px]' variant='lg'/>
                                 <div>
                                     <ul className="flex pl-4 gap-8">
                                         <SocialLink title='LinkedIn' href='https://www.linkedin.com/in/paulo-henrique2003'/>
@@ -111,17 +113,17 @@ export default function Home() {
                             </div>
                             <div className='flex flex-col gap-10'>
                                 <div className='flex flex-wrap gap-4'>
-                                    <CategoryButton label='Geral' active={selected === "Geral"} onClick={() => setSelected("Geral")}/>
-                                    <CategoryButton label='Projeto' active={selected === "Projeto"} onClick={() => setSelected("Projeto")}/>
-                                    <CategoryButton label='Parceria' active={selected === "Parceria"} onClick={() => setSelected("Parceria")}/>
-                                    <CategoryButton label='Outro' active={selected === "Outro"} onClick={() => setSelected("Outro")}/>
+                                    <CategoryButton label={t("contact.categoryOne")} active={selected === "Geral"} onClick={() => setSelected("Geral")}/>
+                                    <CategoryButton label={t("contact.categoryTwo")} active={selected === "Projeto"} onClick={() => setSelected("Projeto")}/>
+                                    <CategoryButton label={t("contact.categoryThree")} active={selected === "Parceria"} onClick={() => setSelected("Parceria")}/>
+                                    <CategoryButton label={t("contact.categoryFour")} active={selected === "Outro"} onClick={() => setSelected("Outro")}/>
                                 </div>
                                 <div>
                                     <form action="" className='flex flex-col gap-8'>
-                                        <Input label='Nome' placeholder='Seu nome'/>
-                                        <Input label='Email' placeholder='Seu email'/>
-                                        <Input label='Mensagem' placeholder='Como posso ajudar?'/>
-                                        <button type='submit' className='text-white font-medium py-4 rounded-full border border-white/20 transition-all duration-300 hover:bg-white hover:text-grey-700 cursor-pointer'>Enviar mensagem</button>
+                                        <Input label={t("contact.labelOne")} placeholder={t("contact.placeholderOne")}/>
+                                        <Input label={t("contact.labelTwo")} placeholder={t("contact.placeholderTwo")}/>
+                                        <Input label={t("contact.labelThree")} placeholder={t("contact.placeholderThree")}/>
+                                        <button type='submit' className='text-white font-medium py-4 rounded-full border border-white/20 transition-all duration-300 hover:bg-white hover:text-grey-700 cursor-pointer'>{t("contact.button")}</button>
                                     </form>
                                 </div>
                             </div>

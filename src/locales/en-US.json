@@ -1,0 +1,121 @@
+{
+    "header": {
+        "about": "about",
+        "certifications": "certifications",
+        "projects": "projects"
+    },
+
+    "hero": {
+        "designer": "ui/ux designer",
+        "prototipo": "prototyping",
+        "designSystem": "design system",
+        "figma": "figma"
+    },
+
+    "stats": {
+        "experience": "Years of Experience",
+        "projects": "UI/UX Projects",
+        "published": "Published Projects",
+        "hours": "Hours of Learning"
+    },
+
+    "project": {
+        "title": "featured projects",
+        "subTitle": "A selection of my key projects.",
+        "projectOne": "Jack The Jumper",
+        "projectTwo": "ImersivaMed",
+        "projectThree": "RotaOnco"
+    },
+
+    "design": {
+        "title": "design in practice",
+        "subTitle": "Design applied to real-world projects",
+        "interfaceTitle": "User Interface",
+        "interfaceDesc": "Creating modern, organized, and functional interfaces with a focus on aesthetics and usability for clear and consistent digital experiences.",
+        "experienceTitle": "User Experience",
+        "experienceDesc": "Developing user-centered solutions focused on intuitive navigation, visual clarity, and simple, effective interactions.",
+        "prototypeTitle": "Interface Prototyping",
+        "prototypeDesc": "Planning user flows, wireframes, and interactive prototypes to transform ideas into clear and consistent digital experiences."
+    },
+
+    "contact": {
+        "title": "let's work together",
+        "subTitle": "Feel free to get in touch for questions, opportunities, or ideas. I'm always open to new conversations and design collaborations.",
+        "categoryOne": "General",
+        "categoryTwo": "Project",
+        "categoryThree": "Partnership",
+        "categoryFour": "Other",
+        "labelOne": "name",
+        "placeholderOne": "Your name",
+        "labelTwo": "email",
+        "placeholderTwo": "Your email",
+        "labelThree": "message",
+        "placeholderThree": "How can I help?",
+        "button": "Send Message"
+    },
+
+    "about": {
+        "title": "my design journey",
+        "subTitle": "Learning, creating, and growing through digital experiences.",
+        "descriptionOne": "My interest in UI/UX began during technical high school in a design-related course. Although it was not an in-depth subject, it was my first contact with the design world, where I started creating small interfaces.",
+        "descriptionTwo": "When I entered university, I realized the importance of planning projects before development. In some courses, I began creating prototypes to better structure ideas before turning them into functional products, which further strengthened my interest in UI/UX.",
+        "descriptionThree": "Since then, I have dedicated myself to UI/UX Design courses to improve my skills and knowledge. Today, I continue to learn and grow continuously."
+    },
+
+    "experience": {
+        "title": "professional experience",
+        "subTitle": "Between code, interfaces, and user experience.",
+        "rotaOncoTitle": "RotaOnco | Aug 2025 - Oct 2025 (Freelance)",
+        "rotaOncoSubTitle": "UI/UX Designer",
+        "rotaOncoListOne": "Conducted visual and functional reference research.",
+        "rotaOncoListTwo": "Created wireframes for user profiles (doctors, patients, and admin dashboard).",
+        "rotaOncoListThree": "Designed high-fidelity prototypes for both the mobile app and management platform, ensuring an intuitive user experience.",
+
+        "equipeWTTitle": "EquipeWT | Jul 2025 - Aug 2025 (Freelance)",
+        "equipeWTSubTitle": "UI/UX Designer",
+        "equipeWTListOne": "Conducted visual and functional reference research.",
+        "equipeWTListTwo": "Created wireframes to define the website structure.",
+        "equipeWTListThree": "Designed layouts and high-fidelity prototypes.",
+
+        "designTitle": "Sistema FIEA | Oct 2024 - Jun 2025 (Internship)",
+        "designSubTitle": "UI/UX Design Intern",
+        "designListOne": "Worked alongside another designer on interfaces for internal systems.",
+        "designListTwo": "Created wireframes and high-fidelity prototypes using Figma.",
+        "designListThree": "Participated in the entire design process, from planning to prototyping.",
+        "designListFour": "Deepened knowledge in UX and UI Design, focusing on user experience and interface design.",
+
+        "devTitle": "Sistema FIEA | Jul 2024 - Sep 2024 (Internship)",
+        "devSubTitle": "Front-End Development Intern",
+        "devListOne": "Collaborated with the team on the front-end development of an internal system.",
+        "devListTwo": "Participated in agile practices such as sprints, daily meetings, and retrospectives.",
+        "devListThree": "Enhanced front-end technical skills throughout the internship.",
+        "devListFour": "Gained practical experience in teamwork and agile methodologies."
+    },
+
+    "training": {
+        "title": "education",
+        "subTitle": "My learning and academic journey.",
+        "graduationTitle": "CESMAC University Center",
+        "graduationSubTitle": "Information Systems | 2021.2 - 2025.1",
+        "technicalTitle": "SESI SENAI Education and Technology Center",
+        "technicalSubTitle": "Technical High School in Internet Computing | 2019 - 2021"
+    },
+
+    "certification": {
+        "title": "my certifications",
+        "subTitle": "Some of my achievements.",
+        "categoryOne": "All",
+        "categoryTwo": "UI/UX Design",
+        "categoryThree": "Front-End",
+        "categoryFour": "Immersion"
+    },
+
+    "projects": {
+        "title": "digital experiences created",
+        "subTitle": "Ideas transformed into digital experiences.",
+        "categoryOne": "All",
+        "categoryTwo": "Freelance",
+        "categoryThree": "Academic",
+        "categoryFour": "Courses"
+    }
+}

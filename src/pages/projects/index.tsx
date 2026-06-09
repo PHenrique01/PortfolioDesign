@@ -5,15 +5,17 @@ import { useState } from 'react'
 import { projects } from '@data/projects.data'
 import CategoryButton from '@components/categoryButton'
 import Footer from '@components/footer'
+import { useTranslation } from 'react-i18next'
 
 export default function Projects() {
     const [selected, setSelected] = useState('Todos')
+    const { t } = useTranslation()
 
     const categories = [
-        'Todos',
-        'Freelance',
-        'Acadêmicos',
-        'Cursos',
+        t("projects.categoryOne"),
+        t("projects.categoryTwo"),
+        t("projects.categoryThree"),
+        t("projects.categoryFour"),
     ]
 
     const filterProjects = selected === 'Todos' ? projects :
@@ -28,7 +30,7 @@ export default function Projects() {
                 <section aria-label='Projetos' className='pb-24'>
                     <Layout>
                         <div className='flex flex-col gap-12'>
-                            <Title title='experiências criadas' subtitle='Ideias transformadas em experiências digitais.'/>
+                            <Title title={t("projects.title")} subtitle={t("projects.subTitle")}/>
                             <div className='flex flex-col gap-8'>
                                 <div className='flex gap-4'>
                                     {categories.map((category) => (
