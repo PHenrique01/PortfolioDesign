@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: "/PortfolioDesign",
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "src/assets"),
