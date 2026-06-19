@@ -7,7 +7,7 @@ export default function Footer() {
     return(
         <footer className='border-t border-t-grey-500 py-10'>
             <Layout>
-                <div className='flex items-center justify-between'>
+                <div className='flex flex-col sm:flex-row gap-8 sm:gap-0 items-center justify-between'>
                     <div>
                         <p className='text-grey-400'>© 2026 Paulo Henrique.</p>
                     </div>

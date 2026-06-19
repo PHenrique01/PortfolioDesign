@@ -56,10 +56,10 @@ export default function StateItem({ number, label, suffix = "" }: StateItemProps
 
     return(
         <div ref={ref} className='flex flex-col gap-1'>
-            <span className='text-white text-3xl font-bold'>
+            <span className='text-white text-4xl md:text-3xl font-bold'>
                 {count}{suffix}
             </span>
-            <span className='text-grey-100 text-lg'>
+            <span className='text-grey-100 text-basea lg:text-lg'>
                 {label}
             </span>
         </div>

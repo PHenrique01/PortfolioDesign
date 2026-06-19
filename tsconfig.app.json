@@ -28,6 +28,7 @@
       "@locales/*": ["./src/locales/*"],
       "@pages/*": ["./src/pages/*"],
       "@routes/*": ["./src/routes/*"],
+      "@services/*": ["./src/services/*"],
       "@styles/*": ["./src/styles/*"],
     }
   },

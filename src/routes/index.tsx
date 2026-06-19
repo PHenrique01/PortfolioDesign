@@ -3,10 +3,12 @@ import Home from "@pages/home"
 import About from "@pages/about"
 import Certifications from "@pages/certifications"
 import Projects from "@pages/projects"
+import ScrollToTop from "@components/scrollToTop"
 
 export default function AppRoutes() {
     return(
         <BrowserRouter>
+            <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/sobre" element={<About/>}/>

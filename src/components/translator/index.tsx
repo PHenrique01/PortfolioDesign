@@ -4,7 +4,11 @@ import ChevronDownIcon from '@assets/icons/CaretDown.svg'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useRef, useState } from 'react'
 
-export default function LanguageSelector() {
+interface LanguageSelectorProps {
+    mobile?: boolean;
+}
+
+export default function LanguageSelector({ mobile = false }: LanguageSelectorProps) {
     const { i18n } = useTranslation()
     const [isOpen, setIsOpen] = useState(false)
     const dropdownRef = useRef<HTMLDivElement>(null)
@@ -56,6 +60,23 @@ export default function LanguageSelector() {
         }
     }, [])
 
+    if (mobile) {
+        return(
+            <div className='flex flex-col gap-2'>
+                <span className='text-sm text-grey-400 uppercase'>
+                    Idioma
+                </span>
+                {languages.map((language) => (
+                    <button key={language.code} onClick={() => handleLanguageChange(language.code)} className={`flex items-center gap-3 px-3 py-3 rounded-xl transition-colors duration-300 ${i18n.language === language.code ? "bg-grey-600" : "hover:bg-grey-600"}`}>
+                        <img src={language.flag} alt={language.label} />
+                        <span className='text-grey-100'>
+                            {language.label}
+                        </span>
+                    </button>
+                ))}
+            </div>
+        )
+    }
     return(
         <div ref={dropdownRef} className='relative'>
             <button onClick={() => setIsOpen(!isOpen)} className='flex items-center gap-2 transition-colors duration-300 cursor-pointer'>
