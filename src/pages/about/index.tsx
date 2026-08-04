@@ -53,7 +53,7 @@ export default function About() {
                                     <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.equipeWTTitle")} subtitle={t("experience.equipeWTSubTitle")} list={[t("experience.equipeWTListOne"), t("experience.equipeWTListTwo"), t("experience.equipeWTListThree")]}/>
                                 </Reveal>
                                 <Reveal delay={300}>
-                                    <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.designTitle")} subtitle={t("experience.designSubtitle")} list={[t("experience.designListOne"), t("experience.designListTwo"), t("experience.designListThree"), t("experience.designListFour")]}/>
+                                    <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.designTitle")} subtitle={t("experience.designSubTitle")} list={[t("experience.designListOne"), t("experience.designListTwo"), t("experience.designListThree"), t("experience.designListFour")]}/>
                                 </Reveal>
                                 <Reveal delay={400}>
                                     <Card nameClasse='bg-grey-500 p-6 rounded-2xl' title={t("experience.devTitle")} subtitle={t("experience.devSubTitle")} list={[t("experience.devListOne"), t("experience.devListTwo"), t("experience.devListThree"), t("experience.devListFour")]}/>
